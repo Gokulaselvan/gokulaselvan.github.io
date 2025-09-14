@@ -26,12 +26,15 @@ jobs:
 
       - name: Build site
         run: npm run build
+      
+      - name: List files in current directory
+        run: ls -la
 
       - name: Upload Pages artifact
         id: deploy-pages
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./build   # Change to your build output directory
+          path: ./dist
 
   deploy:
     needs: build
