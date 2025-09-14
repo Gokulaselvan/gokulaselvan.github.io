@@ -1,28 +1,29 @@
-import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 import './App.css'
 
 function App() {
   return (
     <div
       style={{
-        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
         margin: '0 auto',
         maxWidth: 600,
         padding: 20,
       }}
     >
       <header style={{ textAlign: 'center', marginBottom: 40 }}>
+        <div style={{ fontWeight: '700', fontSize: '1.4rem' }}>Hello, I'm</div>
         <h1>Gokulaselvan Anandhan</h1>
-        <p>Full Stack Developer | React Enthusiast | Django Explorer</p>
+        <p># Full Stack Developer | React Enthusiast | Django Explorer</p>
       </header>
 
       <section style={{ marginBottom: 30 }}>
         <h2>About Me</h2>
         <p>
-          Passionate developer skilled in building modern web applications with
-          React, Node.js, and TypeScript. I also love to work in Django,
-          enjoying building backend services and full-stack applications. I
-          enjoy solving complex problems and continually improving my craft.
+          I am a passionate developer with 6.9 years of experience building
+          modern web applications using Django, Fast API, React, Node.js, and
+          TypeScript as a full-stack development. I thrive on solving complex
+          problems and am constantly striving to enhance my skills and deliver
+          high-quality solutions.
         </p>
       </section>
 
