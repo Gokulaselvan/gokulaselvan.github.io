@@ -28,7 +28,8 @@ jobs:
         run: npm run build
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        id: deploy-pages
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./build   # Change to your build output directory
 
@@ -41,5 +42,5 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
         id: deploy-pages
-        uses: actions/deploy-pages@v1
