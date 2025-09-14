@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      
+
       # Build your site here if needed. For example, with React + Vite:
       - name: Install dependencies
         run: npm install
@@ -27,6 +27,9 @@ jobs:
       - name: Build site
         run: npm run build
       
+      - name: List files in current directory
+        run: ls -la
+
       - name: List files in current directory
         run: ls -la
 
