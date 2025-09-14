@@ -20,7 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      # Build your site here if needed. For example, with React + Vite:
       - name: Install dependencies
         run: npm install
 
@@ -28,7 +27,8 @@ jobs:
         run: npm run build
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        id: deploy-pages
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./build   # Change to your build output directory
 
@@ -41,5 +41,4 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        id: deploy-pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
