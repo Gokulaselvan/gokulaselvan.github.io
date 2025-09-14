@@ -20,6 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      # Build your site here if needed. For example, with React + Vite:
       - name: Install dependencies
         run: npm install
 
@@ -42,3 +43,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+        id: deploy-pages
