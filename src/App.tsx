@@ -19,7 +19,7 @@ function App() {
       <section style={{ marginBottom: 30 }}>
         <h2>About Me</h2>
         <p>
-          I am a passionate developer with 6.9 years of experience building
+          I am a passionate developer with 7 years of experience building
           modern web applications using Django, Fast API, React, Node.js, and
           TypeScript as a full-stack development. I thrive on solving complex
           problems and am constantly striving to enhance my skills and deliver
